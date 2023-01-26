@@ -17,15 +17,15 @@
 // My solution
 
 function sumArray(arr) {
-    if(arr == null){
+  if(arr == null){
+    return 0
+  }else if(arr.length < 2){
       return 0
-    }else if(arr.length < 2){
-        return 0
-    }else{
-    let sorted = arr.sort((a,b)=> a-b)
-    let sum = 0
-    let lowAndHighSum = sorted[0] + (sorted[sorted.length - 1])
-    arr.forEach(num => sum += num)
-    return sum - lowAndHighSum
-    }
+  }else{
+  let sorted = arr.sort((a,b)=> a-b)
+  let sum = 0
+  let lowAndHighSum = sorted[0] + (sorted[sorted.length - 1])
+  arr.forEach(num => sum += num)
+  return sum - lowAndHighSum
+  }
 }
