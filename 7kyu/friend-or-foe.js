@@ -13,5 +13,5 @@
 // My solution
 
 function friend(friends){
-    return friends.filter(e => e.length === 4)
-  }
+  return friends.filter(e => e.length === 4)
+}
