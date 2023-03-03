@@ -10,15 +10,15 @@
 
 // My solutions
 
-function squareDigits(num){
-    return +num.toString().split('').map(e => e * e).join('');
-  }
+function squareDigits(num) {
+  return +num.toString().split('').map(e => e * e).join('');
+}
 
-  function squareDigits(num){
-    var str = num.toString()
-    var results = []
-    for (var i = 0; i < str.length; i++){
-        results[i] = str[i] * str[i]
-    }
-    return Number(results.join(''))
+function squareDigits(num) {
+  const str = num.toString()
+  let results = []
+  for (let i = 0; i < str.length; i++) {
+    results[i] = str[i] * str[i]
+  }
+  return Number(results.join(''))
 }

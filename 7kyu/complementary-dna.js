@@ -13,36 +13,30 @@
 
 // My solution
 
-var pairs = {'A':'T','T':'A','C':'G','G':'C'};
+const pairs = { 'A': 'T', 'T': 'A', 'C': 'G', 'G': 'C' };
 
-function DNAStrand(dna){
-  return dna.split('').map(function(v){ return pairs[v] }).join('');
+function DNAStrand(dna) {
+  return dna.split('').map(function (v) { return pairs[v] }).join('');
 }
 
-function DNAStrand(dna){
-    //your code here
-    var result= "";
-            for(var i =0; i<dna.length; i++) 
-            {
-          if (dna[i]==="A") 
-         {
-          result +="T";
-         }
-          else if (dna[i]==="T") 
-         {
-          result += "A";
-          }
-          else if (dna[i]==="C")
-          {
-          result +="G";
-          }
-          else if (dna[i]==="G")
-          {
-          result += "C";
-          }
-          else {
-          result +=dna[i];
-          }
-           }
-       return result;
-      }
+function DNAStrand(dna) {
+  let result = "";
+  for (let i = 0; i < dna.length; i++) {
+    if (dna[i] === "A") {
+      result += "T";
+    }
+    else if (dna[i] === "T") {
+      result += "A";
+    }
+    else if (dna[i] === "C") {
+      result += "G";
+    }
+    else if (dna[i] === "G") {
+      result += "C";
+    }
+    else {
+      result += dna[i];
+    }
+  }
+  return result;
+}

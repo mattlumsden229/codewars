@@ -17,7 +17,7 @@
 
 // My solution
 
-const binaryArrayToNumber = arr => {
+function binaryArrayToNumber(arr) {
   const binaryString = arr.join('')
-  return parseInt(binaryString,2)
+  return parseInt(binaryString, 2)
 }
